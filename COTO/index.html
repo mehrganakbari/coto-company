@@ -1,13 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href=""/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>COTO - Company</title>
-  </head>
-  <body class="">
-    
-    <script type="module" src="src/scripts/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="assets/images/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COTO - Company</title>
+</head>
+
+<body class="overflow-hidden bg-lite scroll-smooth">
+  <!-- navbar -->
+  <nav class="bg-blue">
+    <section class="mx-auto container max-w-[1536px] flex justify-between items-center px-5">
+      <!-- logo -->
+      <div class=""><a href="index.html"><img src="assets/images/logo.png" alt=""
+            class="w-24 translate-y-1/4 md:translate-y-2/4"></a>
+      </div>
+      <!-- links -->
+      <ul class="hidden md:flex">
+        <a href="#home">
+          <li class="pr-5 text-lite transition-all duration-300 hover:text-gold py-2">HOME</li>
+        </a>
+        <a href="#about">
+          <li class="pr-5 text-lite transition-all duration-500 hover:text-gold py-2">ABOUT</li>
+        </a>
+        <a href="#servises">
+          <li class="pr-5 text-lite transition-all duration-500 hover:text-gold py-2">SERVICES</li>
+        </a>
+        <a href="#projects">
+          <li class="pr-5 text-lite transition-all duration-500 hover:text-gold py-2">PROJECTS</li>
+        </a>
+        <a href="#contactus">
+          <li class="text-lite transition-all duration-500 hover:text-gold py-2">CONTACT US</li>
+        </a>
+      </ul>
+      <div class="flex">
+        <!-- search -->
+        <button class="p-2 text-lite transition-all duration-500 hover:text-gold search-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+          </svg>
+        </button>
+        <!-- menu button -->
+        <button id="mobile-menu-button"
+          class="p-2 text-lite transition-all duration-500 hover:text-gold md:hidden mobile-menu-button">
+          <svg class="w-8 h-8 rounded-md m-5 text-white" x-show="!showMenu" fill="none" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <ul id="mobile-menu" class="hidden w-full text-center py-5 md:hidden mobile-menu">
+      <a href="#home">
+        <li class="text-lite transition-all duration-300 hover:text-gold py-2">HOME</li>
+      </a>
+      <a href="#about">
+        <li class="text-lite transition-all duration-500 hover:text-gold py-2">ABOUT</li>
+      </a>
+      <a href="#servises">
+        <li class="text-lite transition-all duration-500 hover:text-gold py-2">SERVICES</li>
+      </a>
+      <a href="#projects">
+        <li class="text-lite transition-all duration-500 hover:text-gold py-2">PROJECTS</li>
+      </a>
+      <a href="#contactus">
+        <li class="text-lite transition-all duration-500 hover:text-gold py-2">CONTACT US</li>
+      </a>
+    </ul>
+  </nav>
+  <!-- search box -->
+  <section
+    class="hidden transition-all duration-300 bg-slate bg-opacity-95 left-0 top-0 fixed w-full h-full z-50 search-box">
+    <!-- close button -->
+    <div class="flex justify-end m-4">
+      <button id="close-btn" class="p-3 text-lite transition-all duration-500 hover:text-gold md:hidden close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </button>
+    </div>
+    <!-- content -->
+    <div class="absolute top-2/4 lef-2/4 text-center w-full">
+      <input type="text" name="search-input" id="search-input" placeholder="search . . ."
+        class="w-72 bg-slate bg-opacity-0 border-b border-b-gold py-2 text-center placeholder:text-center placeholder:text-lite">
+      <br>
+      <input type="submit" value="submit" class="text-lite my-3 py-2 px-8 border border-gold rounded-lg">
+    </div>
+  </section>
+  <script type="module" src="src/scripts/main.js"></script>
+</body>
+
 </html>
