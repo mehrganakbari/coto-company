@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero': "url('../assets/images/banner-bg.png')",
+        'circle': "url('../assets/images/bg-circle.svg')",
       },
       screens: {
         'xs': '400px',
