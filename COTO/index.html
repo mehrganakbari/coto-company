@@ -8,12 +8,12 @@
   <title>COTO - Company</title>
 </head>
 
-<body class="overflow-hidden bg-lite scroll-smooth">
+<body class="overflow-x-hidden bg-lite scroll-smooth">
   <!-- navbar -->
   <nav class="bg-blue">
     <section class="mx-auto container max-w-[1536px] flex justify-between items-center px-5">
       <!-- logo -->
-      <div class=""><a href="index.html"><img src="assets/images/logo.png" alt=""
+      <div class="z-50"><a href="index.html"><img src="assets/images/logo.png" alt=""
             class="w-24 translate-y-1/4 md:translate-y-2/4"></a>
       </div>
       <!-- links -->
@@ -76,7 +76,7 @@
     class="hidden transition-all duration-300 bg-slate bg-opacity-95 left-0 top-0 fixed w-full h-full z-50 search-box">
     <!-- close button -->
     <div class="flex justify-end m-4">
-      <button id="close-btn" class="p-3 text-lite transition-all duration-500 hover:text-gold md:hidden close-btn">
+      <button id="close-btn" class="p-3 text-lite transition-all duration-500 hover:text-gold close-btn">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
           class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round"
@@ -87,11 +87,40 @@
     <!-- content -->
     <div class="absolute top-2/4 lef-2/4 text-center w-full">
       <input type="text" name="search-input" id="search-input" placeholder="search . . ."
-        class="w-72 bg-slate bg-opacity-0 border-b border-b-gold py-2 text-center placeholder:text-center placeholder:text-lite">
+        class="w-72 bg-slate bg-opacity-0 border-b border-b-gold py-2 text-center placeholder:text-center placeholder:text-lite focus:outline-none text-lite">
       <br>
       <input type="submit" value="submit" class="text-lite my-3 py-2 px-8 border border-gold rounded-lg">
     </div>
   </section>
+  <!-- main section -->
+  <main>
+    <!-- banner -->
+    <section class="relative bg-hero bg-center bg-no-repeat bg-cover h-[600px] w-full px-5">
+      <div class="absolute top-1/3 right-0 w-full px-5">
+        <div class="text-lite text-5xl">
+          We<br>Make Your<br class="my-40">Dream Home
+        </div>
+        <div class="md:flex justify-between my-4 mt-10 w-full items-center">
+          <div class="flex flex-col xs2:flex-row w-full md:w-4/6">
+            <button class="bg-lite text-slate transition-all duration-300 hover:bg-orange hover:text-lite rounded py-2 px-5 mx-1">CONTACT US</button>
+            <button class="hover:bg-lite hover:text-slate transition-all duration-300 bg-orange text-lite rounded py-2 px-7 mx-2 my-2 xs2:my-0">GET A QUOTE NOW</button>
+          </div>
+          <div class="w-full md:w-2/6 flex justify-center xs2:justify-start mt-5 md:mt-0">
+            <button class="hover:bg-lite hover:text-slate transition-all duration-300 bg-orange text-lite rounded-full p-2 mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+              </svg>              
+            </button>
+            <button class="hover:bg-lite hover:text-slate transition-all duration-300 bg-orange text-lite rounded-full p-2 mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+              </svg>              
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
   <script type="module" src="src/scripts/main.js"></script>
 </body>
 

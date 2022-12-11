@@ -11,6 +11,9 @@ module.exports = {
       'orange': '#e8531f',
     },
     extend: {
+      backgroundImage: {
+        'hero': "url('../assets/images/banner-bg.png')",
+      },
       screens: {
         'xs': '400px',
         'xs2': '515px',
